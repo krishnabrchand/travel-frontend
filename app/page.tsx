@@ -66,29 +66,34 @@ export default function Home() {
               className="absolute top-0 left-0 w-full h-full bg-black/30"
             ></span>
           </div>
-          <div className="px-20 py-30 relative z-10 grid max-w-400 w-full mx-auto">
-            <div className="flex">
-              <span className="bg-primary/90 text-primary-foreground uppercase px-4 py-1">
+          <div className="px-20 py-30 relative z-10 grid gap-3 max-w-300 w-full mx-auto">
+            <div className="flex ml-1.5">
+              <span className="text-background bg-primary/80 px-3 py-0.5 font-medium">
                 Booking for 2026 now open
               </span>
             </div>
-            <h1 className="text-8xl font-bold relative z-10 text-background ml-40">
+            <h1 className="text-8xl font-bold relative z-10 text-background">
               Everest
             </h1>
-            <div className="mt-2 ml-40">
+            <div className="mt-2">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 text-xl font-semibold text-background"
+                className="inline-flex items-center gap-2 text-lg text-background font-semibold hover:text-primary transition-colors duration-300"
               >
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 300 300"
-                    fill="white"
+                    width="40"
+                    height="40"
+                    fill="none"
+                    viewBox="0 0 24 24"
                   >
-                    <path d="M149.996 0C67.157 0 .001 67.161.001 149.997S67.157 300 149.996 300s150.003-67.163 150.003-150.003S232.835 0 149.996 0zM208.8 94.181l-38.097 107.473a2.59 2.59 0 0 1-2.067 1.699 2.597 2.597 0 0 1-2.469-1.032l-19.346-26.434-31.981 31.979c-.506.506-1.17.76-1.834.76s-1.328-.254-1.834-.76L91.806 188.5a2.59 2.59 0 0 1 0-3.667l31.979-31.984-26.436-19.343a2.594 2.594 0 0 1 .664-4.536l107.473-38.097a2.588 2.588 0 0 1 2.7.609c.71.704.949 1.755.614 2.699z" />
+                    <path
+                      fill="currentColor"
+                      fillRule="evenodd"
+                      d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm.707-14.707 4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L13.586 13H8a1 1 0 1 1 0-2h5.586l-2.293-2.293a1 1 0 0 1 1.414-1.414Z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </span>
                 <span>Your Adventure Starts Here</span>
