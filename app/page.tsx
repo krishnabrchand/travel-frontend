@@ -56,7 +56,7 @@ export default function Home() {
         <section className="w-full h-screen bg-background relative grid content-center">
           <div className="absolute h-full w-full left-0 top-0">
             <Image
-              src="/images/mountain.jpg"
+              src="/images/static-images/mountain.jpg"
               alt="Hero Image"
               fill
               className="object-cover"
@@ -78,9 +78,9 @@ export default function Home() {
             <div className="mt-2">
               <a
                 href="#"
-                className="inline-flex items-center gap-2 text-lg text-background font-semibold hover:text-primary transition-colors duration-300"
+                className="inline-flex items-center gap-2 text-lg text-background font-semibold group/icon-link transition-colors duration-300"
               >
-                <span>
+                <span className="group-hover/icon-link:text-primary group-hover/icon-link:pl-3 transition-all duration-200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
@@ -96,14 +96,69 @@ export default function Home() {
                     />
                   </svg>
                 </span>
-                <span>Your Adventure Starts Here</span>
+                <span className="font-serif">Your Adventure Starts Here</span>
               </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="max-w-410 px-25 mx-auto py-20 grid gap-24">
+            <h2 className="text-center">
+              <span className="text-5xl/[1.2] font-serif block">
+                Explore the
+              </span>
+              <span className="text-[5rem]/[1.2] block font-semibold">
+                Himalayas
+              </span>
+            </h2>
+            <div className="grid grid-cols-3 gap-11">
+              <div className="relative pt-[122%]">
+                <Image
+                  src="/images/static-images/image-1.webp"
+                  alt="Trekking"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full px-8 pb-6 pt-20 bg-linear-to-t from-foreground/80 to-transparent">
+                  <h3 className="text-3xl font-serif text-background">Treks</h3>
+                </div>
+              </div>
+              <div className="relative pt-[122%]">
+                <Image
+                  src="/images/static-images/image-1.webp"
+                  alt="Trekking"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full px-8 pb-6 pt-20 bg-linear-to-t from-foreground/80 to-transparent">
+                  <h3 className="text-3xl font-serif text-background">Treks</h3>
+                </div>
+              </div>
+              <div className="relative pt-[122%]">
+                <Image
+                  src="/images/static-images/image-1.webp"
+                  alt="Trekking"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute bottom-0 left-0 w-full px-8 pb-6 pt-20 bg-linear-to-t from-foreground/80 to-transparent">
+                  <h3 className="text-3xl font-serif text-background">Treks</h3>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <footer id="page-footer" className="">
         <div className="grid gap-20 bg-primary p-20">
+          <div>
+            <a
+              href="#"
+              className="inline-block bg-secondary text-primary font-semibold px-8 py-3 rounded-md"
+            >
+              Explore
+            </a>
+          </div>
           <div className="grid gap-5 text-background">
             <h2 className="text-5xl font-semibold relative z-10">
               Footer Heading

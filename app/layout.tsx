@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Marcellus } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"]
 });
-const playfairDisplayFont = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin"]
+const marcellus = Marcellus({
+  variable: "--font-marcellus",
+  subsets: ["latin"],
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfairDisplayFont.variable} font-sans antialiased`}
+        className={`${inter.variable} ${marcellus.variable} font-sans antialiased`}
       >
         {children}
       </body>
